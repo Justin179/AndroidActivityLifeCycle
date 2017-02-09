@@ -17,7 +17,7 @@ public class LifecycleActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lifecycle);
 
-        status = "Activity Created";
+        status = "活動創造 Activity Created";
         displayStatus();
     }
 
@@ -25,7 +25,7 @@ public class LifecycleActivity extends Activity {
     protected void onStart() {
         //activity resumed
         super.onStart();
-        status = "Activity Started";
+        status = "活動開始 Activity Started";
         displayStatus();
     }
 
@@ -33,7 +33,7 @@ public class LifecycleActivity extends Activity {
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         //restoring instance state
         super.onRestoreInstanceState(savedInstanceState);
-        status = "Restoring Instance";
+        status = "回復實體 Restoring Instance";
         displayStatus();
 
     }
@@ -42,15 +42,17 @@ public class LifecycleActivity extends Activity {
     protected void onResume() {
         //activity resumed
         super.onResume();
-        status = "Activity Resumed";
+        status = "活動繼續 Activity Resumed";
         displayStatus();
     }
+
+    // ---------------------------------------------
 
     @Override
     protected void onPause() {
         //activity paused
         super.onPause();
-        status = "Activity Paused";
+        status = "活動暫停 Activity Paused";
         displayStatus();
     }
 
@@ -58,7 +60,7 @@ public class LifecycleActivity extends Activity {
     protected void onSaveInstanceState(Bundle outState) {
         //saving instance state
         super.onSaveInstanceState(outState);
-        status = "Saving Instance";
+        status = "儲存實體 Saving Instance";
         displayStatus();
 
     }
@@ -67,7 +69,7 @@ public class LifecycleActivity extends Activity {
     protected void onStop() {
         //activity stopped
         super.onStop();
-        status = "Activity Stopped";
+        status = "活動停止 Activity Stopped";
         displayStatus();
     }
 
@@ -75,7 +77,7 @@ public class LifecycleActivity extends Activity {
     protected void onDestroy() {
         //activity destroyed
         super.onDestroy();
-        status = "Activity Destroyed";
+        status = "活動催毀 Activity Destroyed";
         displayStatus();
     }
 
@@ -83,7 +85,7 @@ public class LifecycleActivity extends Activity {
     protected void onRestart() {
         //activity destroyed
         super.onRestart();
-        status = "Activity Restarted";
+        status = "活動重新開始 Activity Restarted";
         displayStatus();
     }
 
